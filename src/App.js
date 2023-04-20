@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from './componentes/imgs/lakke-logo.png'
 
 export default function App() {
   const const1=()=>{
@@ -11,8 +12,16 @@ export default function App() {
 
   return(
     <>
-      <p>{const1()} {const2()} + um texto qualquer</p>
-      <p>{const2()}</p>
+      <section>
+        <header>
+          <p>{const1()} {const2()} + um texto qualquer</p>
+          <p>{const2()}</p>
+        </header>
+        <section>
+          <img src={Logo}></img>
+          <img src='/img/logo192.png'></img>
+        </section>
+      </section>
     </>
   )
 }
